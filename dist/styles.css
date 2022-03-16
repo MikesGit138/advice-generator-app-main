@@ -49,6 +49,8 @@ div.desktop-divider{
 div.mobile-divider{
     display: none;
     margin-top: 2em;
+    margin-bottom: 1em;
+
 }
 /* div.dice{
     position: absolute;
@@ -83,6 +85,6 @@ button.dice-border{
         display: none
     }
     div.mobile-divider{
-        display: block;
+        display: inline-block;
     }
 }
