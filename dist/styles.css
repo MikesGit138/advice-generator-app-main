@@ -39,7 +39,11 @@ div.content{
     color: var(--lightcyan);
     font-size: 28px;
 }
-div.divider{
+div.desktop-divider{
+    margin-top: 2em;
+}
+div.mobile-divider{
+    display: none;
     margin-top: 2em;
 }
 div.dice{
@@ -55,4 +59,22 @@ div.dice-border{
     width: 55px;
     border-radius: 50%;
     background-color: var(--neongreen);
+}
+
+/* design for phone screens */
+
+@media screen and (max-width: 550px) {
+    div.card{
+        width: 80vw;
+    }
+    div.dice{
+        left: 1%;
+        top: 18.5%;
+    }
+    div.desktop-divider{
+        display: none
+    }
+    div.mobile-divider{
+        display: block;
+    }
 }
