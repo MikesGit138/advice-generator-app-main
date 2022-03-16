@@ -46,12 +46,12 @@ div.mobile-divider{
     display: none;
     margin-top: 2em;
 }
-div.dice{
-    position: relative;
-    top: 19%;
-    left: .4%;
-}
-div.dice-border{
+/* div.dice{
+    position: absolute;
+    top: 95%;
+    left: 48.1%;
+} */
+button.dice-border{
     position: absolute;
     top: 90%;
     left: 45%;  
@@ -59,6 +59,10 @@ div.dice-border{
     width: 55px;
     border-radius: 50%;
     background-color: var(--neongreen);
+    border: none;
+}
+.dice-border:hover{
+    opacity: 0.8;
 }
 
 /* design for phone screens */
@@ -68,8 +72,8 @@ div.dice-border{
         width: 80vw;
     }
     div.dice{
-        left: 1%;
-        top: 18.5%;
+        left: 48.5%;
+        top: 95%;
     }
     div.desktop-divider{
         display: none
