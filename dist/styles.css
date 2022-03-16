@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
 :root{
     /* primary */
     --lightcyan: hsl(193, 38%, 86%);
@@ -22,7 +26,7 @@ div.card-ctn{
 div.card{
     background-color: var(--darkgreyishblue);
     width: 35vw;
-    height: 40vh;
+    height: 50%;
     text-align: center;
     padding: 2em 2em;
     border-radius: 10px;
