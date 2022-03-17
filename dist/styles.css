@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-    box-sizing: border-box;
-}
 :root{
     /* primary */
     --lightcyan: hsl(193, 38%, 86%);
@@ -14,6 +10,8 @@ body{
 body{
     font-family: 'Manrope', sans-serif;
     background-color: var(--darkblue);
+    margin: 0;
+    box-sizing: border-box;
 }
 div.card-ctn{
     /* centers the card horizantally and vertically */
@@ -52,20 +50,28 @@ div.mobile-divider{
     margin-bottom: 1em;
 
 }
-/* div.dice{
-    position: absolute;
-    top: 95%;
-    left: 48.1%;
-} */
+
+div.dice-ctn{
+    /* better button styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3.5em;
+    cursor: pointer;
+}
 button.dice-border{
-    position: absolute;
-    top: 90%;
-    left: 45%;  
     height: 55px;
     width: 55px;
     border-radius: 50%;
     background-color: var(--neongreen);
     border: none;
+}
+.dice-border .dice{
+    display: inline-block;
+}
+.dice-border .dice-text{
+    display: none;
 }
 .dice-border:hover{
     opacity: 0.8;
@@ -77,14 +83,12 @@ button.dice-border{
     div.card{
         width: 80vw;
     }
-    div.dice{
-        left: 48.5%;
-        top: 95%;
-    }
+    
     div.desktop-divider{
         display: none
     }
     div.mobile-divider{
         display: inline-block;
     }
+    
 }
